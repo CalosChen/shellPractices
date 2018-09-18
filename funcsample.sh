@@ -9,13 +9,14 @@ for file in `ls .`;do
 echo $file
 done
 echo $@
+echo $*
 
 getname(){
     return "calos: $1"
 }
 getname 23
 echo $?
-
+read sth
 mkdir test
 cd test
 echo "yes">>test.txt
