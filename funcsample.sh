@@ -11,6 +11,18 @@ done
 echo $@
 echo $*
 
+#to check is a folder
+if [ -d $0 ];then
+echo "dir"
+exit 0;
+else
+echo "not dir"
+fi
+if [ -f $0 ];then
+echo "file"
+exit 1;
+fi
+
 getname(){
     return "calos: $1"
 }
