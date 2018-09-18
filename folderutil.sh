@@ -8,5 +8,8 @@
 #***********************
 
 findandreplaceall(){
-    if
+    if [ -d $0 ];then
+    for file in $0;do
+    cat $file
+    done
 }
