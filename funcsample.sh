@@ -16,6 +16,9 @@ getname(){
 getname 23
 echo $?
 
+mkdir test
+cd test
+echo "yes">>test.txt
 
 funWithParam(){
     echo "第一个参数为 $1 !"
